@@ -1,11 +1,13 @@
 # MarioAI
 
-In my Doom reinforcement learning project, I worked with different environments that presented unique challenges. Each environment came with its own predefined reward system, which meant I had to adapt and work with the existing reward structures.
+In my Mario reinforcement learning project, I set up the game using the Gym environment. To optimize the learning process, I applied a grayscale filter to the frames, which helped focus on essential visual features while reducing unnecessary information.
 
-To preprocess the data and optimize the models' learning, I applied a grayscale filter to the frames. This filtering technique helped eliminate unnecessary information and allowed the models to focus on the most relevant aspects of the environment.
+Additionally, I implemented frame stacking, capturing moments when Mario made an action. This technique allowed the model to consider the sequential nature of the game and better understand the dynamics of Mario's movements.
 
-During the training process, the most significant number of steps I encountered was 560,000, achieved by a single model. This milestone served as a measure of the complexity and difficulty I faced in that particular environment.
+For the reinforcement learning algorithm, I utilized the CNNPolicy variant of Proximal Policy Optimization (PPO).
 
-To implement the reinforcement learning algorithm, I utilized the PPO algorithm with the CNNPolicy variant. PPO is a widely used algorithm that strikes a balance between exploration and exploitation to maximize rewards.
+During the training process, the model reached an impressive milestone of 4 million steps. This indicates the extensive exploration and learning undertaken by the model to improve its performance in the game.
+
+The training phase for the model lasted approximately 5 and a half days. This duration demonstrates the computational resources and time required to train a model that can achieve a high level of proficiency in complex games like Mario.
 
 You can find the demo [here]()!
